@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.6;net46</TargetFrameworks>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.1</NetStandardImplicitPackageVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>Cake.UrlLoadDirective.Module</PackageId>
+    <Title>Cake.UrlLoadDirective.Moduke</Title>
+    <Summary>Cake module for supporting downloading files from url's in the #load directive.</Summary>
+    <Description>Cake module for supporting downloading files from url's in the #load directive.</Description>
+    <PackageTags>Cake Script Build Module</PackageTags>
+    <Authors>Redth</Authors>
+    <Owners>Redth</Owners>
+    <PackageProjectUrl>https://github.com/redth/Cake.UrlLoadDirective.Module</PackageProjectUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/redth/Cake.UrlLoadDirective.Module/master/icon.png</PackageIconUrl>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/redth/Cake.UrlLoadDirective.Module/master/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cake.Core" Version="0.22.2" />
+    <PackageReference Include="Cake.Common" Version="0.22.2" />
+  </ItemGroup>
+ 
+</Project>

@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.UrlLoadDirective.Module", "Cake.UrlLoadDirective.Module\Cake.UrlLoadDirective.Module.csproj", "{0FBA4ACE-54E7-4244-B793-C0466BB03E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cake.UrlLoadDirective.Module.Tests", "Cake.UrlLoadDirective.Module.Tests\Cake.UrlLoadDirective.Module.Tests.csproj", "{3D254E35-491E-4A7F-B1F4-67ED87AA9045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FBA4ACE-54E7-4244-B793-C0466BB03E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBA4ACE-54E7-4244-B793-C0466BB03E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBA4ACE-54E7-4244-B793-C0466BB03E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBA4ACE-54E7-4244-B793-C0466BB03E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D254E35-491E-4A7F-B1F4-67ED87AA9045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D254E35-491E-4A7F-B1F4-67ED87AA9045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D254E35-491E-4A7F-B1F4-67ED87AA9045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D254E35-491E-4A7F-B1F4-67ED87AA9045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
