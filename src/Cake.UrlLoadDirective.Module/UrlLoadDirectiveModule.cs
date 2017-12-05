@@ -1,7 +1,11 @@
 ﻿using System;
+using Cake.Core.Annotations;
 using Cake.Core.Composition;
 using Cake.Core.Packaging;
 using Cake.Core.Scripting.Processors.Loading;
+using Cake.UrlLoadDirective.Module;
+
+[assembly: CakeModule(typeof(UrlLoadDirectiveModule))]
 
 namespace Cake.UrlLoadDirective.Module
 {
