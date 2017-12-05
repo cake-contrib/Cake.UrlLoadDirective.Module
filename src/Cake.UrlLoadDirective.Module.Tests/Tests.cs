@@ -48,7 +48,6 @@ namespace Cake.UrlLoadDirective.Module.Tests
 
 			f.Load(lr);
 
-
 			Assert.NotEmpty(f.LoadedReferences);
 
 			foreach (var k in f.LoadedReferences.Keys)

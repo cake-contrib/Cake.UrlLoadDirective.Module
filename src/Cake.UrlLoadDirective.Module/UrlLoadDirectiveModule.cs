@@ -11,7 +11,7 @@ namespace Cake.UrlLoadDirective.Module
 {
 	/// <summary>
 	/// The module responsible for registering
-	/// default types in the Cake.Chocolatey.Module assembly.
+	/// default types in the Cake.UrlLoadDirective.Module assembly.
 	/// </summary>
 	public sealed class UrlLoadDirectiveModule : ICakeModule
 	{

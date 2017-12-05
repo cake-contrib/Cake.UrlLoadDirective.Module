@@ -7,7 +7,7 @@ namespace Cake.UrlLoadDirective.Module
 	internal static class Constants
 	{
 		/// <summary>
-		/// Chocolatey Constants
+		/// UrlLoadDirective Constants
 		/// </summary>
 		public static class Paths
 		{
@@ -17,7 +17,7 @@ namespace Cake.UrlLoadDirective.Module
 			public const string Urls = "Paths_Urls";
 
 			/// <summary>
-			/// The config key name for overriding the default download path for urls
+			/// The config key name for overriding the default download path for tools
 			/// </summary>
 			public const string Tools = "Paths_Tools";
 		}

@@ -9,8 +9,16 @@ using Cake.Core.Scripting.Processors.Loading;
 
 namespace Cake.UrlLoadDirective.Module
 {
+	/// <summary>
+	/// A URL Source Provider for #load directives
+	/// </summary>
 	public sealed class UrlLoadDirectiveProvider : ILoadDirectiveProvider
 	{
+		/// <summary>
+		/// Initializes a new instance of the <see cref="T:Cake.UrlLoadDirective.Module.UrlLoadDirectiveProvider"/> class.
+		/// </summary>
+		/// <param name="configuration">The configuration.</param>
+		/// <param name="environment">The environment.</param>
 		public UrlLoadDirectiveProvider(ICakeConfiguration configuration, ICakeEnvironment environment)
 		{
 			_configuration = configuration;
@@ -20,11 +28,23 @@ namespace Cake.UrlLoadDirective.Module
 		private ICakeEnvironment _environment;
 		private ICakeConfiguration _configuration;
 
+		/// <summary>
+		/// Can the URL Provider load a given reference
+		/// </summary>
+		/// <returns><c>true</c>, if reference can be loaded, <c>false</c> otherwise.</returns>
+		/// <param name="context">The context.</param>
+		/// <param name="reference">The load reference.</param>
 		public bool CanLoad(IScriptAnalyzerContext context, LoadReference reference)
 		{
 			return reference.Scheme != null && reference.Scheme.Equals("url", StringComparison.OrdinalIgnoreCase);
 		}
 
+		/// <summary>
+		/// Load the given reference
+		/// </summary>
+		/// <returns>The load.</returns>
+		/// <param name="context">The context.</param>
+		/// <param name="reference">The load reference.</param>
 		public void Load(IScriptAnalyzerContext context, LoadReference reference)
 		{
 			var urlsPath = GetUrlsPath(context.Root.GetDirectory());
