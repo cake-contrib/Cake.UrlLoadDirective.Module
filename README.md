@@ -11,6 +11,20 @@ This module will allow cake script files from any url to be loaded, for example:
 
 Notice the `url:` in front of the actual url.  This is required to indicate to the preprocessor directive that you want to load a url.
 
+# Installation
+
+Installing a Cake Module is pretty simple.  Just add a file like this:
+`./tools/Modules/packages.config`
+
+With the content:
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+	<package id="Cake.UrlLoadDirective.Module" version="1.0.2" />
+</packages>
+```
+
+You should now be all set and able to use it in your scripts!
 
 # License
 
