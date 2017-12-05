@@ -29,15 +29,23 @@ namespace Cake.UrlLoadDirective.Module
 		{
 			var urlsPath = GetUrlsPath(context.Root.GetDirectory());
 
-			var referenceHash = HashMd5(reference.ToString());
+			var actualUrl = reference.Address;
+
+			var referenceHash = HashMd5(actualUrl.ToString());
 
 			var urlFile = urlsPath.CombineWithFilePath(referenceHash + ".cake").MakeAbsolute(_environment);
 
 			if (!System.IO.File.Exists(urlFile.FullPath))
 			{
+				var urlFileDir = urlFile.GetDirectory().FullPath;
+
+				// Make sure the directory exists we want to save to
+				if (!System.IO.Directory.Exists(urlFileDir))
+					System.IO.Directory.CreateDirectory(urlFileDir);
+				
 				var http = new System.Net.Http.HttpClient();
 
-				using (var httpStream = http.GetStreamAsync(reference.ToString()).Result)
+				using (var httpStream = http.GetStreamAsync(actualUrl).Result)
 				using (var cacheStream = System.IO.File.Create(urlFile.MakeAbsolute(_environment).FullPath))
 				{
 					httpStream.CopyTo(cacheStream);
