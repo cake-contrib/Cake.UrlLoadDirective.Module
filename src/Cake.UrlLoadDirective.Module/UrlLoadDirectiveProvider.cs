@@ -9,7 +9,7 @@ using Cake.Core.Scripting.Processors.Loading;
 
 namespace Cake.UrlLoadDirective.Module
 {
-	internal sealed class UrlLoadDirectiveProvider : ILoadDirectiveProvider
+	public sealed class UrlLoadDirectiveProvider : ILoadDirectiveProvider
 	{
 		public UrlLoadDirectiveProvider(ICakeConfiguration configuration, ICakeEnvironment environment)
 		{
