@@ -7,15 +7,17 @@
 
   <PropertyGroup>
     <PackageId>Cake.UrlLoadDirective.Module</PackageId>
-    <Title>Cake.UrlLoadDirective.Moduke</Title>
+    <Title>Cake.UrlLoadDirective.Module</Title>
     <Summary>Cake module for supporting downloading files from url's in the #load directive.</Summary>
     <Description>Cake module for supporting downloading files from url's in the #load directive.</Description>
     <PackageTags>Cake Script Build Module</PackageTags>
     <Authors>Redth</Authors>
-    <Owners>Redth</Owners>
-    <PackageProjectUrl>https://github.com/redth/Cake.UrlLoadDirective.Module</PackageProjectUrl>
+    <Owners>Redth, cake-contrib</Owners>
+    <PackageProjectUrl>https://github.com/cake-contrib/Cake.UrlLoadDirective.Module</PackageProjectUrl>
     <PackageIconUrl>https://cdn.jsdelivr.net/gh/cake-contrib/graphics/png/cake-contrib-medium.png</PackageIconUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/redth/Cake.UrlLoadDirective.Module/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/cake-contrib/Cake.UrlLoadDirective.Module.git</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,5 +25,5 @@
     <PackageReference Include="Cake.Common" Version="0.33.0" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
   </ItemGroup>
- 
+
 </Project>
